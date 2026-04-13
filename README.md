@@ -1,6 +1,6 @@
 # Fixing-kalakar-ux
 
-Simple static mockup of the UX audit section (inspired by kalakar.io export flow).
+Simple static mockup of the UX audit section (kalakar.io).
 
 ## Run
 
