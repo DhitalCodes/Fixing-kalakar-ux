@@ -184,13 +184,13 @@ body {
   color: #d1d8e7;
 }
 
-body.fixed .divider {
+body.fixed-state .divider {
   color: #15dca7;
   font-weight: 800;
   font-size: 24px;
 }
 
-body.fixed .flow-card {
+body.fixed-state .flow-card {
   min-height: 136px;
 }
 
