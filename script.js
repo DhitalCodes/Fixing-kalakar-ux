@@ -1,8 +1,8 @@
-const modeButtons = document.querySelectorAll("[data-mode]");
+const viewModeButtons = document.querySelectorAll("[data-mode]");
 
-modeButtons.forEach((button) => {
+viewModeButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    modeButtons.forEach((btn) => btn.classList.remove("active"));
+    viewModeButtons.forEach((btn) => btn.classList.remove("active"));
     button.classList.add("active");
 
     const isAfter = button.dataset.mode === "after";
@@ -10,7 +10,7 @@ modeButtons.forEach((button) => {
 
     const separators = document.querySelectorAll(".divider");
     separators.forEach((node) => {
-      node.textContent = isAfter ? "" : ":";
+      node.textContent = isAfter ? "→" : ":";
     });
   });
 });
