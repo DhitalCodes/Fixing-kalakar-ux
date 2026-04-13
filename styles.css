@@ -190,10 +190,6 @@ body.fixed-state .divider {
   font-size: 24px;
 }
 
-body.fixed-state .flow-card {
-  min-height: 136px;
-}
-
 @media (max-width: 800px) {
   .flow {
     grid-template-columns: 1fr;
