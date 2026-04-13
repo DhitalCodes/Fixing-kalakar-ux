@@ -184,16 +184,13 @@ body {
   color: #d1d8e7;
 }
 
-body.fixed .divider {
-  color: #15dca7;
-  font-weight: 800;
-}
-
 body.fixed .divider::before {
   content: "→";
 }
 
 body.fixed .divider {
+  color: #15dca7;
+  font-weight: 800;
   font-size: 24px;
 }
 
