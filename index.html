@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UX Audit - Kalakar</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>UX Audit — kalakar.io</h1>
+        <p>Export in SRT / Alpha Channel section</p>
+      </div>
+      <span class="issue-pill" id="issueCount">0 Issues Found</span>
+    </header>
+
+    <main class="wrap">
+      <div class="switch-row">
+        <button class="chip active" data-filter="card-layout">Card Layout Issues</button>
+        <button class="chip" data-filter="scroll-jacking">Scroll-Jacking Issue</button>
+      </div>
+
+      <div class="switch-row">
+        <button class="chip danger active" data-mode="before">Before (with bugs)</button>
+        <button class="chip success" data-mode="after">After (fixed)</button>
+      </div>
+
+      <section class="preview">
+        <p class="mini-title">FOR PRO-EDITORS</p>
+        <h2>Export in SRT or Alpha Channel</h2>
+        <p class="desc">
+          For all the Pro-Editors, cross NLE support available to bring captions
+          back locally in your own software of choice.
+        </p>
+
+        <div class="flow" id="flow">
+          <article class="flow-card">
+            <h3>Step 1</h3>
+            <p>Export from NLE</p>
+          </article>
+          <span class="divider">:</span>
+          <article class="flow-card center">
+            <h3>Step 2</h3>
+            <p>Kalakar Render</p>
+            <div class="tags">
+              <span>SRT File</span>
+              <span>Alpha Channel</span>
+            </div>
+          </article>
+          <span class="divider">:</span>
+          <article class="flow-card">
+            <h3>Step 3</h3>
+            <p>Import back locally</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="section-title">Issues Breakdown</h3>
+        <ul class="issues">
+          <li><b>Colon ':' used as separator</b> — not a clear directional cue.</li>
+          <li><b>Center card pops out</b> — breaks row alignment.</li>
+          <li><b>No step labels</b> — workflow intent is unclear.</li>
+          <li><b>Detached label</b> — "Render in SRT/Alpha" appears misplaced.</li>
+          <li><b>Right card lacks context</b> — feels incomplete.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

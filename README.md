@@ -1,2 +1,7 @@
 # Fixing-kalakar-ux
-just the betterment of ux 
+
+Simple static mockup of the UX audit section (inspired by kalakar.io export flow).
+
+## Run
+
+Open `index.html` in a browser.
